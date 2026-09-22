@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Politique de confidentialité — MagikFridge</title>
+<meta name="description" content="Données personnelles traitées par MagikFridge : ce qui reste sur votre téléphone, ce que le site collecte, destinataires, transferts, durées et droits RGPD." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="MagikFridge" />
+<link rel="icon" href="./favicon.png" type="image/png" />
+<link rel="canonical" href="https://magikfridge.com/confidentialite.html" />
+<meta name="theme-color" content="#7B1FA2" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Politique de confidentialité — MagikFridge" />
+<meta property="og:description" content="Données personnelles traitées par MagikFridge : ce qui reste sur votre téléphone, ce que le site collecte, destinataires, transferts, durées et droits RGPD." />
+<meta property="og:url" content="https://magikfridge.com/confidentialite.html" />
+<meta property="og:locale" content="fr_FR" />
+<style>
+:root{
+  --violet:#7B1FA2; --violet-fonce:#5E1580; --vert:#4CAF50; --vert-fonce:#2E7D32;
+  --orange:#F57C00; --fond:#FDFCFA; --carte:#ffffff; --bord:#EAE4F1;
+  --texte:#241432; --texte-doux:#5B5470;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--fond); color:var(--texte); line-height:1.7;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--violet); text-decoration:underline; text-underline-offset:2px}
+a:hover{color:var(--violet-fonce)}
+.mf-top{position:sticky; top:0; z-index:10; backdrop-filter:blur(8px);
+  background:rgba(253,252,250,.92); border-bottom:1px solid var(--bord)}
+.mf-top-in{max-width:900px; margin:0 auto; padding:14px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.mf-brand{font-weight:800; font-size:18px; text-decoration:none; letter-spacing:-.02em}
+.mf-brand span{color:var(--vert-fonce)}
+.mf-nav{display:flex; gap:18px; flex-wrap:wrap; font-size:14px; font-weight:600}
+.mf-nav a{text-decoration:none}
+.mf-wrap{max-width:900px; margin:0 auto; padding:36px 20px 72px}
+.mf-card{background:var(--carte); border:1px solid var(--bord); border-radius:24px;
+  padding:32px; box-shadow:0 1px 2px rgba(36,20,50,.04)}
+h1{font-size:clamp(27px,4vw,38px); line-height:1.2; margin:0 0 6px; letter-spacing:-.02em}
+h2{font-size:20px; margin:34px 0 10px; color:var(--violet-fonce); letter-spacing:-.01em}
+h3{font-size:16px; margin:22px 0 8px}
+p,li{font-size:15.5px; color:var(--texte)}
+.mf-meta{font-size:13.5px; color:var(--texte-doux); margin:0 0 26px}
+.mf-eyebrow{display:inline-flex; align-items:center; gap:8px; background:#F1E7F7;
+  color:var(--violet-fonce); border-radius:999px; padding:5px 13px; font-size:11.5px;
+  font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px}
+.mf-alerte{background:#FFF6E5; border:1px solid #F4C87A; border-left:5px solid var(--orange);
+  border-radius:14px; padding:15px 18px; margin:0 0 26px; font-size:14.5px}
+.mf-alerte strong{color:#8A4B00}
+.mf-todo{background:#FFF1A7; border:1px dashed #C9A100; border-radius:6px;
+  padding:1px 4px; font-weight:700; font-size:.94em}
+.mf-note{background:#F4FBF5; border:1px solid #C8E6C9; border-left:5px solid var(--vert);
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-note strong{color:var(--vert-fonce)}
+.mf-danger{background:#FFF3F2; border:1px solid #F5C6C2; border-left:5px solid #C62828;
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-danger strong{color:#B71C1C}
+table{width:100%; border-collapse:collapse; margin:16px 0; font-size:14.5px}
+th,td{border:1px solid var(--bord); padding:10px 12px; text-align:left; vertical-align:top}
+th{background:#F7F3FA; font-weight:700}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+code{background:#F3EFF7; border-radius:6px; padding:1px 6px; font-size:13.5px}
+.mf-footer{border-top:1px solid var(--bord); background:#F7F8F5; margin-top:40px}
+.mf-footer-in{max-width:900px; margin:0 auto; padding:26px 20px; font-size:13px;
+  color:var(--texte-doux); display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:space-between}
+.mf-footer a{text-decoration:none}
+.mf-toc{background:#FAF7FD; border:1px solid var(--bord); border-radius:16px;
+  padding:14px 20px; margin:0 0 8px}
+.mf-toc ul{margin:6px 0 0}
+.mf-fort{font-weight:700}
+@media print{
+  .mf-top,.mf-footer{display:none}
+  body{background:#fff}
+  .mf-card{border:none; box-shadow:none; padding:0}
+  h2{page-break-after:avoid}
+}
+@media (max-width:640px){ .mf-card{padding:22px} .mf-wrap{padding:24px 16px 56px} }
+</style>
+</head>
+<body>
+<header class="mf-top">
+  <div class="mf-top-in">
+    <a class="mf-brand" href="./">Magik<span>Fridge</span></a>
+    <nav class="mf-nav" aria-label="Pages légales">
+      <a href="./mentions-legales.html">Mentions légales</a>
+      <a href="./cgu.html">CGU</a>
+      <a href="./confidentialite.html">Confidentialité</a>
+      <a href="./cookies.html">Cookies</a>
+    </nav>
+  </div>
+</header>
+<main class="mf-wrap">
+  <article class="mf-card">
+    <span class="mf-eyebrow">Informations légales</span>
+    <h1>Politique de confidentialité</h1>
+    <p class="mf-meta">
+      MagikFridge — version 1.0 du document · dernière mise à jour :
+      20 septembre 2026
+    </p>
+    
+    
+  <nav class="mf-toc" aria-label="Sommaire">
+    <strong>Sommaire</strong>
+    <ul>
+      <li><a href="#responsable">1. Responsable de traitement</a></li>
+      <li><a href="#principe">2. Notre principe : le moins de données possible</a></li>
+      <li><a href="#site">3. Données traitées par le Site (liste d'attente)</a></li>
+      <li><a href="#app">4. Données traitées par l'Application (stockage local)</a></li>
+      <li><a href="#tiers">5. Requêtes vers des services tiers</a></li>
+      <li><a href="#sensibles">6. Données de santé et personnes vulnérables</a></li>
+      <li><a href="#destinataires">7. Destinataires et sous-traitants</a></li>
+      <li><a href="#transferts">8. Transferts hors Union européenne</a></li>
+      <li><a href="#duree">9. Durées de conservation</a></li>
+      <li><a href="#droits">10. Vos droits et comment les exercer</a></li>
+      <li><a href="#securite">11. Sécurité</a></li>
+      <li><a href="#mineurs">12. Mineurs</a></li>
+      <li><a href="#cnil">13. Réclamation auprès de la CNIL</a></li>
+      <li><a href="#evolution">14. Évolution de cette politique</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="responsable">1. Responsable de traitement</h2>
+  <p>
+    Le responsable du traitement des données décrites ci-dessous est l'éditeur du Site et de
+    l'Application :
+  </p>
+  
+  <div class="mf-note">
+    <strong>Responsable de traitement : personne physique à titre non professionnel.</strong>
+    L'identité et les coordonnées complètes du responsable de traitement ont été communiquées à
+    l'hébergeur, conformément à l'article 6-III de la LCEN (voir
+    <a href="./mentions-legales.html">Mentions légales</a>). Toute demande relative à vos données
+    peut être adressée à l'adresse de contact ci-dessous : elle est traitée dans les délais prévus
+    par le RGPD.
+  </div>
+  <table>
+    <tbody>
+      <tr><th>Responsable de traitement</th><td>Personne physique — éditeur à titre non professionnel</td></tr>
+      <tr><th>Qualité</th><td>Activité en cours de création — aucune immatriculation à ce jour</td></tr>
+      <tr><th>Contact pour la protection des données</th><td><a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a></td></tr>
+    </tbody>
+  </table>
+
+  <p>
+    Un délégué à la protection des données (DPO) n'a pas été désigné : l'activité et les traitements
+    réalisés ne l'imposent pas au regard de l'article 37 du RGPD. Le contact ci-dessus exerce les
+    missions d'information et de réponse aux demandes d'exercice des droits.
+  </p>
+
+  <h2 id="principe">2. Notre principe : le moins de données possible</h2>
+  <p>
+    MagikFridge a été conçu selon deux principes de protection des données :
+  </p>
+  <ul>
+    <li>
+      <strong>Minimisation</strong> : nous ne demandons que ce qui est strictement nécessaire. Le Site
+      ne collecte qu'une adresse e-mail, et uniquement si vous choisissez de la laisser.
+    </li>
+    <li>
+      <strong>Stockage local (« <em>local-first</em> »)</strong> : les données de votre frigo, de vos
+      dates, de votre profil et de vos préférences sont enregistrées
+      <strong>dans la mémoire de votre téléphone</strong>. L'Éditeur ne dispose d'aucun serveur
+      contenant ces données et n'y a pas accès.
+    </li>
+  </ul>
+  <div class="mf-note">
+    <strong>En clair :</strong> nous ne vendons, ne louons et ne transmettons aucune donnée à des fins
+    publicitaires. Il n'y a ni profil publicitaire, ni revente de fichiers e-mail. Et parce que vos
+    données de frigo restent sur votre appareil, vous pouvez les supprimer à tout moment (voir
+    « Durées de conservation » et « Vos droits »).
+  </div>
+
+  <h2 id="site">3. Données traitées par le Site (liste d'attente)</h2>
+  <table>
+    <thead><tr><th>Ce que nous traitons</th><th>Pourquoi</th><th>Base légale</th><th>Durée</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Adresse e-mail que vous saisissez<br />+ version des CGU acceptée et date du consentement</td>
+        <td>Vous informer de la sortie de l'application et du lancement (et prouver votre consentement)</td>
+        <td>Votre <strong>consentement</strong> (art. 6-1-a RGPD), recueilli par la case à cocher du formulaire</td>
+        <td>24 mois à compter du dernier contact, ou jusqu'au retrait du consentement</td>
+      </tr>
+      <tr>
+        <td>Adresse IP et journaux techniques de connexion</td>
+        <td>Sécurité de l'hébergement et bon fonctionnement du Site</td>
+        <td>Intérêt légitime à sécuriser le service (art. 6-1-f)</td>
+        <td>Durée fixée par l'hébergeur (GitHub, Inc.)</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Aucun autre traitement n'est réalisé</strong> : pas de compte utilisateur, pas d'analytique
+    (aucun Google Analytics, Matomo, Plausible ou pixel publicitaire), pas de bouton de réseau social
+    qui vous suivrait, pas de cookie (voir la page <a href="./cookies.html">Cookies</a>).
+  </p>
+  <p>
+    Vous pouvez retirer votre consentement à tout moment : en cliquant sur le lien de désinscription
+    présent dans nos courriels, ou en écrivant à
+    <a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a>. Votre adresse est alors supprimée de la liste
+    d'attente (dans un délai maximal d'un mois).
+  </p>
+
+  <h2 id="app">4. Données traitées par l'Application (stockage local)</h2>
+  <p>
+    L'Application fonctionne <strong>sans compte et sans serveur de collecte</strong>. Les données
+    suivantes sont enregistrées <strong>uniquement dans la mémoire de votre appareil</strong>
+    (stockage local de l'application) et ne sont transmises ni à l'Éditeur ni à un service tiers,
+    sauf pour les fonctions que vous déclenchez explicitement (voir section 5) :
+  </p>
+  <ul>
+    <li>le contenu de votre frigo : produits, quantités, dates de péremption, emplacements ;</li>
+    <li>vos favoris, votre liste de courses, votre historique de consommation et vos recettes ;</li>
+    <li>
+      votre profil et vos préférences : objectifs, régime, allergies/intolérances, situation
+      personnelle que vous choisissez de renseigner ;
+    </li>
+    <li>vos réglages (langue, notifications, thème) et vos fichiers de sauvegarde que vous exportez.</li>
+  </ul>
+  <p>
+    L'Éditeur n'a <strong>pas accès</strong> à ces données : il ne peut ni les consulter, ni les
+    corriger, ni les restaurer. Elles sont supprimées lorsque vous effacez les données de
+    l'Application ou la désinstallez — d'où l'importance de la fonction d'export (sauvegarde
+    décrite dans les <a href="./cgu.html#sauvegarde">CGU</a>).
+  </p>
+  <p>
+    Les notifications éventuelles sont générées par votre téléphone, et non par un serveur de
+    l'Éditeur.
+  </p>
+
+  <h2 id="tiers">5. Requêtes vers des services tiers</h2>
+  <p>
+    Certaines fonctions envoient une requête depuis votre appareil vers un service tiers. Cela ne se
+    produit que lorsque vous utilisez la fonction concernée :
+  </p>
+  <table>
+    <thead><tr><th>Fonction</th><th>Service (et pays)</th><th>Ce qui est transmis</th></tr></thead>
+    <tbody>
+      <tr><th>Fiche produit par code-barres</th><td>Open Food Facts (France / UE) · DataKick</td><td>le code-barres scanné</td></tr>
+      <tr><th>Alertes de rappel produits</th><td>RappelConso — data.economie.gouv.fr (France)</td><td>aucune donnée personnelle</td></tr>
+      <tr><th>Lecture d'étiquette (OCR)</th><td>OCR.space (États-Unis)</td><td><strong>la photo de l'étiquette</strong> que vous envoyez</td></tr>
+      <tr><th>Traduction de noms de produits</th><td>MyMemory — Translated (UE)</td><td>le texte à traduire (nom de produit)</td></tr>
+      <tr><th>Commerces à proximité</th><td>OpenStreetMap : Nominatim, Overpass (UE)</td><td>une zone géographique approximative</td></tr>
+      <tr><th>Assistant « Mina » (en ligne)</th><td>Cloudflare Workers (États-Unis)</td><td>la question posée et le contexte nécessaire</td></tr>
+      <tr><th>Recherche de recettes (en ligne)</th><td>DuckDuckGo (États-Unis)</td><td>les termes de recherche</td></tr>
+    </tbody>
+  </table>
+  <div class="mf-danger">
+    <strong>Précaution recommandée :</strong> la fonction OCR envoie la photo au service tiers. Ne
+    photographiez que des <strong>étiquettes de produits alimentaires</strong> — jamais un document
+    personnel (courrier, ordonnance, pièce d'identité, ordonnance médicale).
+  </div>
+  <p>
+    Ces services appliquent leurs propres politiques de confidentialité, sur lesquelles l'Éditeur n'a
+    aucun contrôle. Si vous ne souhaitez pas utiliser une fonction en ligne, vous pouvez saisir les
+    informations manuellement dans l'Application.
+  </p>
+
+  <h2 id="sensibles">6. Données de santé et personnes vulnérables</h2>
+  <p>
+    Certaines informations que vous pouvez renseigner (allergies, intolérances, grossesse, objectifs
+    de santé, régime médical) constituent des <strong>données concernant la santé</strong>, protégées
+    par l'article 9 du RGPD. C'est pourquoi :
+  </p>
+  <ul>
+    <li>
+      ces informations <strong>restent sur votre appareil</strong> : elles ne sont
+      <strong>jamais transmises</strong> à l'Éditeur, ne sont pas envoyées sur un serveur et ne
+      servent qu'à adapter localement les conseils et les recettes ;
+    </li>
+    <li>
+      vous n'êtes jamais obligé de les renseigner : toutes les fonctions de base de l'Application
+      restent utilisables sans elles ;
+    </li>
+    <li>
+      vous décidez, fonction par fonction, d'utiliser ou non les services en ligne de la section 5
+      (aucune donnée de santé n'y est envoyée).
+    </li>
+  </ul>
+  <div class="mf-note">
+    <strong>Rappel important :</strong> MagikFridge n'est pas un dispositif médical et ne fournit
+    aucun conseil médical. En cas de question de santé, consultez un professionnel — voir
+    <a href="./cgu.html#sante">CGU, section 7</a>.
+  </div>
+
+  <h2 id="destinataires">7. Destinataires et sous-traitants</h2>
+  <p>
+    Vos données ne sont <strong>jamais vendues ni louées</strong>. Les seuls destinataires sont les
+    prestataires techniques nécessaires au service :
+  </p>
+  <table>
+    <thead><tr><th>Prestataire</th><th>Rôle</th><th>Données concernées</th></tr></thead>
+    <tbody>
+      <tr>
+        <th>GitHub, Inc. (GitHub Pages)</th>
+        <td>Hébergement du Site</td>
+        <td>Adresse IP, journaux de connexion</td>
+      </tr>
+      <tr>
+        <th>Formspree, Inc.</th>
+        <td>Réception du formulaire de liste d'attente et envoi des courriels</td>
+        <td>Adresse e-mail, version des CGU acceptée, horodatage</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Ces prestataires agissent comme <strong>sous-traitants</strong> au sens de l'article 28 du RGPD et
+    n'utilisent pas vos données pour leur propre compte. Aucune donnée n'est communiquée à des fins
+    commerciales, ni aux autorités, sauf obligation légale.
+  </p>
+
+  <h2 id="transferts">8. Transferts hors Union européenne</h2>
+  <p>
+    L'hébergement du Site (GitHub, Inc.) et l'acheminement du formulaire (Formspree, Inc.) impliquent
+    un traitement aux <strong>États-Unis</strong>. Ces transferts sont encadrés par les mécanismes
+    prévus au chapitre V du RGPD — notamment le <em>EU-US Data Privacy Framework</em> lorsque le
+    prestataire est certifié, et à défaut les <strong>clauses contractuelles types</strong> de la
+    Commission européenne — complétés par des mesures techniques et organisationnelles
+    (chiffrement en transit via HTTPS, minimisation des données, limitation des finalités).
+  </p>
+  <p>
+    Les éventuels transferts liés aux fonctions optionnelles de la section 5 (OCR.space, Cloudflare,
+    DuckDuckGo) sont mis en œuvre par ces services, chacun selon ses propres garanties.
+    <strong>Vos données de frigo, de dates et de profil ne sont jamais transférées</strong> : elles
+    restent sur votre appareil.
+  </p>
+
+  <h2 id="duree">9. Durées de conservation</h2>
+  <ul>
+    <li>
+      <strong>Liste d'attente</strong> : 24 mois à compter du dernier contact, ou jusqu'au retrait du consentement, puis suppression.
+    </li>
+    <li>
+      <strong>Journaux techniques de l'hébergeur</strong> : durée déterminée par GitHub, Inc. à des
+      fins de sécurité.
+    </li>
+    <li>
+      <strong>Données de l'Application</strong> : conservées sur votre appareil <strong>tant que vous
+      le décidez</strong> ; supprimées immédiatement lorsque vous effacez les données ou désinstallez
+      l'Application.
+    </li>
+    <li>
+      <strong>Preuve de consentement</strong> (version des CGU acceptée + date) : conservée pendant la
+      durée de l'inscription, puis supprimée avec l'adresse e-mail.
+    </li>
+  </ul>
+
+  <h2 id="droits">10. Vos droits et comment les exercer</h2>
+  <p>Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants :</p>
+  <table>
+    <thead><tr><th>Droit</th><th>Ce que cela signifie pour vous</th></tr></thead>
+    <tbody>
+      <tr><th>Accès</th><td>Savoir quelles données nous détenons à votre sujet (pour le Site : votre adresse e-mail).</td></tr>
+      <tr><th>Rectification</th><td>Faire corriger une adresse e-mail erronée.</td></tr>
+      <tr><th>Effacement</th><td>Obtenir la suppression de votre adresse e-mail de la liste d'attente.</td></tr>
+      <tr><th>Retrait du consentement</th><td>Retirer votre consentement à tout moment, sans justification (désinscription ou e-mail).</td></tr>
+      <tr><th>Opposition et limitation</th><td>Vous opposer à un traitement ou en demander la limitation.</td></tr>
+      <tr><th>Portabilité</th><td>Recevoir les données que vous nous avez fournies dans un format lisible (fichier texte/CSV).</td></tr>
+      <tr><th>Directives post-mortem</th><td>Définir le sort de vos données après votre décès (art. 85 de la loi Informatique et Libertés).</td></tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Comment exercer vos droits :</strong> écrivez à
+    <a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a> en précisant le droit concerné. Nous répondons
+    dans un délai <strong>maximal d'un mois</strong>. En cas de doute raisonnable sur votre identité,
+    une pièce justificative peut être demandée — uniquement si nécessaire (par exemple pour une demande
+    d'accès portant sur des données identifiantes).
+  </p>
+  <div class="mf-note">
+    <strong>Bon à savoir :</strong> pour les données stockées dans l'Application (frigo, profil,
+    allergies), vous n'avez pas besoin de nous solliciter : vous pouvez les consulter, les exporter
+    (fonction de sauvegarde) et les supprimer vous-même, directement depuis l'Application. C'est le
+    meilleur moyen de garder le contrôle.
+  </div>
+
+  <h2 id="securite">11. Sécurité</h2>
+  <p>
+    Les mesures suivantes sont mises en œuvre : chiffrement des échanges (HTTPS/HSTS), hébergement
+    statique (aucune base de données utilisateur exposée côté Éditeur), minimisation stricte des
+    données collectées, aucune séparation d'un compte utilisateur à gérer, et stockage des données
+    métier sur votre propre appareil. Les prestataires sont sélectionnés pour leurs engagements de
+    sécurité et de conformité.
+  </p>
+  <p>
+    Aucun système n'étant infaillible, la sécurité de votre appareil (code de déverrouillage, mises à
+    jour système, sauvegardes) reste déterminante pour la protection de vos données locales.
+  </p>
+
+  <h2 id="mineurs">12. Mineurs</h2>
+  <p>
+    Le Site et l'Application ne sont pas destinés aux enfants de moins de 15 ans sans l'accord du
+    titulaire de l'autorité parentale. Nous ne collectons pas sciemment de données concernant des
+    mineurs de moins de 15 ans sur le Site. Si vous constatez qu'un mineur de moins de 15 ans a laissé
+    son adresse e-mail sans l'accord de son représentant légal, écrivez-nous : l'adresse sera
+    supprimée.
+  </p>
+
+  <h2 id="cnil">13. Réclamation auprès de la CNIL</h2>
+  <p>
+    Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous pouvez
+    introduire une réclamation auprès de l'autorité de contrôle française :
+  </p>
+  <table>
+    <tbody>
+      <tr><th>Autorité</th><td>Commission nationale de l'informatique et des libertés (CNIL)</td></tr>
+      <tr><th>Adresse</th><td>3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France</td></tr>
+      <tr><th>Téléphone</th><td>01 53 73 22 22</td></tr>
+      <tr><th>Réclamation en ligne</th><td><a href="https://www.cnil.fr/fr/plaintes" rel="noopener" target="_blank">https://www.cnil.fr/fr/plaintes</a></td></tr>
+    </tbody>
+  </table>
+  <p>Vous pouvez également saisir l'autorité de contrôle de votre lieu de résidence habituelle dans l'Union européenne.</p>
+
+  <h2 id="evolution">14. Évolution de cette politique</h2>
+  <p>
+    Cette politique peut évoluer avec les fonctionnalités du service ou la réglementation. La version
+    applicable est celle publiée sur cette page, accompagnée de sa date de mise à jour. En cas de
+    modification substantielle, une information est affichée sur le Site et, le cas échéant, adressée
+    par courriel aux personnes inscrites.
+  </p>
+  <p>
+    Voir aussi : <a href="./cgu.html">CGU</a> · <a href="./mentions-legales.html">Mentions légales</a>
+    · <a href="./cookies.html">Cookies</a>.
+  </p>
+  <p class="mf-meta">
+    Version 1.0 — 20 septembre 2026. Politique rédigée sur la
+    base du règlement (UE) 2016/679 (RGPD) et de la loi n° 78-17 du 6 janvier 1978 modifiée
+    (Informatique et Libertés).
+  </p>
+
+  </article>
+</main>
+<footer class="mf-footer">
+  <div class="mf-footer-in">
+    <span>© 2026 MagikFridge — <a href="./">Retour à l'accueil</a></span>
+    <span><a href="./mentions-legales.html">Mentions légales</a> · <a href="./cgu.html">CGU</a> · <a href="./confidentialite.html">Confidentialité</a> · <a href="./cookies.html">Cookies</a></span>
+  </div>
+</footer>
+</body>
+</html>

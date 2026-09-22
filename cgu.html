@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conditions Générales d'Utilisation — MagikFridge</title>
+<meta name="description" content="Règles d'utilisation du site et de l'application MagikFridge : santé et sécurité alimentaire, exactitude des données, responsabilité, sauvegarde et litiges." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="MagikFridge" />
+<link rel="icon" href="./favicon.png" type="image/png" />
+<link rel="canonical" href="https://magikfridge.com/cgu.html" />
+<meta name="theme-color" content="#7B1FA2" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Conditions Générales d'Utilisation — MagikFridge" />
+<meta property="og:description" content="Règles d'utilisation du site et de l'application MagikFridge : santé et sécurité alimentaire, exactitude des données, responsabilité, sauvegarde et litiges." />
+<meta property="og:url" content="https://magikfridge.com/cgu.html" />
+<meta property="og:locale" content="fr_FR" />
+<style>
+:root{
+  --violet:#7B1FA2; --violet-fonce:#5E1580; --vert:#4CAF50; --vert-fonce:#2E7D32;
+  --orange:#F57C00; --fond:#FDFCFA; --carte:#ffffff; --bord:#EAE4F1;
+  --texte:#241432; --texte-doux:#5B5470;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--fond); color:var(--texte); line-height:1.7;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--violet); text-decoration:underline; text-underline-offset:2px}
+a:hover{color:var(--violet-fonce)}
+.mf-top{position:sticky; top:0; z-index:10; backdrop-filter:blur(8px);
+  background:rgba(253,252,250,.92); border-bottom:1px solid var(--bord)}
+.mf-top-in{max-width:900px; margin:0 auto; padding:14px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.mf-brand{font-weight:800; font-size:18px; text-decoration:none; letter-spacing:-.02em}
+.mf-brand span{color:var(--vert-fonce)}
+.mf-nav{display:flex; gap:18px; flex-wrap:wrap; font-size:14px; font-weight:600}
+.mf-nav a{text-decoration:none}
+.mf-wrap{max-width:900px; margin:0 auto; padding:36px 20px 72px}
+.mf-card{background:var(--carte); border:1px solid var(--bord); border-radius:24px;
+  padding:32px; box-shadow:0 1px 2px rgba(36,20,50,.04)}
+h1{font-size:clamp(27px,4vw,38px); line-height:1.2; margin:0 0 6px; letter-spacing:-.02em}
+h2{font-size:20px; margin:34px 0 10px; color:var(--violet-fonce); letter-spacing:-.01em}
+h3{font-size:16px; margin:22px 0 8px}
+p,li{font-size:15.5px; color:var(--texte)}
+.mf-meta{font-size:13.5px; color:var(--texte-doux); margin:0 0 26px}
+.mf-eyebrow{display:inline-flex; align-items:center; gap:8px; background:#F1E7F7;
+  color:var(--violet-fonce); border-radius:999px; padding:5px 13px; font-size:11.5px;
+  font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px}
+.mf-alerte{background:#FFF6E5; border:1px solid #F4C87A; border-left:5px solid var(--orange);
+  border-radius:14px; padding:15px 18px; margin:0 0 26px; font-size:14.5px}
+.mf-alerte strong{color:#8A4B00}
+.mf-todo{background:#FFF1A7; border:1px dashed #C9A100; border-radius:6px;
+  padding:1px 4px; font-weight:700; font-size:.94em}
+.mf-note{background:#F4FBF5; border:1px solid #C8E6C9; border-left:5px solid var(--vert);
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-note strong{color:var(--vert-fonce)}
+.mf-danger{background:#FFF3F2; border:1px solid #F5C6C2; border-left:5px solid #C62828;
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-danger strong{color:#B71C1C}
+table{width:100%; border-collapse:collapse; margin:16px 0; font-size:14.5px}
+th,td{border:1px solid var(--bord); padding:10px 12px; text-align:left; vertical-align:top}
+th{background:#F7F3FA; font-weight:700}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+code{background:#F3EFF7; border-radius:6px; padding:1px 6px; font-size:13.5px}
+.mf-footer{border-top:1px solid var(--bord); background:#F7F8F5; margin-top:40px}
+.mf-footer-in{max-width:900px; margin:0 auto; padding:26px 20px; font-size:13px;
+  color:var(--texte-doux); display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:space-between}
+.mf-footer a{text-decoration:none}
+.mf-toc{background:#FAF7FD; border:1px solid var(--bord); border-radius:16px;
+  padding:14px 20px; margin:0 0 8px}
+.mf-toc ul{margin:6px 0 0}
+.mf-fort{font-weight:700}
+@media print{
+  .mf-top,.mf-footer{display:none}
+  body{background:#fff}
+  .mf-card{border:none; box-shadow:none; padding:0}
+  h2{page-break-after:avoid}
+}
+@media (max-width:640px){ .mf-card{padding:22px} .mf-wrap{padding:24px 16px 56px} }
+</style>
+</head>
+<body>
+<header class="mf-top">
+  <div class="mf-top-in">
+    <a class="mf-brand" href="./">Magik<span>Fridge</span></a>
+    <nav class="mf-nav" aria-label="Pages légales">
+      <a href="./mentions-legales.html">Mentions légales</a>
+      <a href="./cgu.html">CGU</a>
+      <a href="./confidentialite.html">Confidentialité</a>
+      <a href="./cookies.html">Cookies</a>
+    </nav>
+  </div>
+</header>
+<main class="mf-wrap">
+  <article class="mf-card">
+    <span class="mf-eyebrow">Informations légales</span>
+    <h1>Conditions Générales d'Utilisation</h1>
+    <p class="mf-meta">
+      MagikFridge — version 1.0 du document · dernière mise à jour :
+      20 septembre 2026
+    </p>
+    
+    
+  <nav class="mf-toc" aria-label="Sommaire">
+    <strong>Sommaire</strong>
+    <ul>
+      <li><a href="#objet">1. Objet et champ d'application</a></li>
+      <li><a href="#acceptation">2. Acceptation des CGU</a></li>
+      <li><a href="#definitions">3. Définitions</a></li>
+      <li><a href="#acces">4. Accès au Site et à l'Application</a></li>
+      <li><a href="#utilisateur">5. Vos données, vos contributions</a></li>
+      <li><a href="#pi">6. Propriété intellectuelle et licence d'usage</a></li>
+      <li><a href="#sante" class="mf-fort">7. Santé, sécurité alimentaire et rappels produits</a></li>
+      <li><a href="#exactitude">8. Exactitude des informations</a></li>
+      <li><a href="#tiers">9. Services tiers et fonctions optionnelles</a></li>
+      <li><a href="#responsabilite" class="mf-fort">10. Responsabilité</a></li>
+      <li><a href="#sauvegarde">11. Sauvegarde de vos données</a></li>
+      <li><a href="#resiliation">12. Suspension et fin d'utilisation</a></li>
+      <li><a href="#evolution">13. Évolution des CGU et du service</a></li>
+      <li><a href="#droit">14. Droit applicable et litiges</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="objet">1. Objet et champ d'application</h2>
+  <p>
+    Les présentes Conditions Générales d'Utilisation (« CGU ») définissent les règles d'accès et
+    d'utilisation du site <a href="https://magikfridge.com">https://magikfridge.com</a> (le « Site ») et de
+    l'application mobile MagikFridge (l'« Application »), édités par
+    Non publié — éditeur personne physique à titre non professionnel (l'« Éditeur »).
+  </p>
+  <p>
+    L'Application est un assistant domestique d'aide à la gestion du réfrigérateur et à la réduction
+    du gaspillage alimentaire : suivi des dates de consommation, suggestions de recettes à partir de
+    ce que vous avez, information sur les additifs et alertes issues de sources publiques.
+    L'Application est un <strong>outil d'information et d'organisation</strong> : elle ne vend aucun
+    produit et ne fournit aucun service médical, paramédical ou diététique à visée thérapeutique.
+  </p>
+  
+  <p>
+    Le Site et l'Application sont édités <strong>à titre personnel et non professionnel</strong> et
+    sont mis à disposition <strong>gratuitement</strong> : ils ne constituent pas, à ce jour, une
+    activité commerciale ou professionnelle, et aucune prestation payante n'est proposée. Cette
+    situation est sans effet sur les droits dont vous bénéficiez en tant qu'utilisateur, décrits aux
+    articles 7 (santé et sécurité alimentaire) et 10 (responsabilité).
+  </p>
+  <p>
+    L'utilisation du Site et de l'Application implique l'acceptation pleine et entière des présentes
+    CGU, de la <a href="./confidentialite.html">Politique de confidentialité</a> et des
+    <a href="./mentions-legales.html">Mentions légales</a>.
+  </p>
+
+  <h2 id="acceptation">2. Acceptation des CGU</h2>
+  <p>
+    Sur le Site, l'acceptation résulte de la case à cocher précédant l'envoi du formulaire de liste
+    d'attente, dont la preuve est conservée (version des CGU acceptée et horodatage du consentement).
+    Dans l'Application, l'acceptation résulte de l'usage de l'Application elle-même.
+  </p>
+  <p>
+    Si vous n'acceptez pas tout ou partie des CGU, vous devez ne pas utiliser le Site et désinstaller
+    l'Application. En cas de désaccord, cessez l'utilisation et, le cas échéant, écrivez à
+    <a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a>.
+  </p>
+  <p>
+    L'utilisateur déclare disposer de la capacité juridique nécessaire. En France, le consentement
+    numérique autonome est possible à partir de <strong>15 ans</strong> pour les services de la
+    société de l'information : les personnes de moins de 15 ans doivent obtenir l'accord du titulaire
+    de l'autorité parentale.
+  </p>
+
+  <h2 id="definitions">3. Définitions</h2>
+  <ul>
+    <li><strong>Éditeur</strong> : la personne qui édite le Site et l'Application (voir Mentions légales).</li>
+    <li><strong>Utilisateur</strong> : toute personne accédant au Site ou utilisant l'Application.</li>
+    <li><strong>Contenus</strong> : textes, fiches produits, recettes, signalements, avis, photos et données affichés ou transmis.</li>
+    <li><strong>Données locales</strong> : données que l'Application enregistre dans la mémoire de votre appareil (frigo, dates, profil, historique).</li>
+    <li><strong>Sources ouvertes</strong> : bases publiques tierces (notamment Open Food Facts, RappelConso, ANSES, ameli).</li>
+    <li><strong>Contributions</strong> : informations que l'Utilisateur transmet volontairement (signalement d'un produit, prix constaté, photo d'étiquette).</li>
+  </ul>
+
+  <h2 id="acces">4. Accès au Site et à l'Application</h2>
+  <p>
+    L'accès au Site et à l'Application est <strong>gratuit</strong> (hors coûts de connexion facturés
+    par votre opérateur et coût de votre matériel). Le service est fourni
+    <strong>« en l'état »</strong> et dans le cadre d'une phase de <strong>version de test (bêta)</strong> :
+    des fonctionnalités peuvent être ajoutées, modifiées ou retirées, et des anomalies peuvent
+    survenir.
+  </p>
+  <p>
+    L'Éditeur s'efforce d'assurer la disponibilité du Site, sans y être tenu : le Site peut être
+    interrompu pour maintenance, mise à jour ou pour toute cause technique, notamment
+    l'indisponibilité de son hébergeur ou des sources tierces. Certaines fonctions de l'Application
+    nécessitent une connexion Internet ; d'autres (frigo, dates déjà enregistrées) restent
+    accessibles hors connexion.
+  </p>
+  <p>
+    L'Utilisateur est responsable de son matériel, de sa connexion, de la sécurité de son appareil et
+    de la mise à jour de l'Application.
+  </p>
+
+  <h2 id="utilisateur">5. Vos données, vos contributions</h2>
+  <p>
+    Les données que vous saisissez dans l'Application (contenu du frigo, dates, profil, allergies,
+    objectifs) sont des <strong>Données locales</strong> : elles sont enregistrées dans la mémoire de
+    votre appareil et ne sont pas transmises à l'Éditeur. Vous en restez seul responsable, y compris
+    de leur exactitude.
+  </p>
+  <p>
+    Lorsque vous transmettez une Contribution (signalement d'un produit, photo d'étiquette, prix
+    constaté), vous garantissez détenir les droits nécessaires et vous concédez à l'Éditeur une
+    licence gratuite, non exclusive, mondiale et pour la durée légale de protection des droits, aux
+    fins d'affichage, de vérification, de modération et d'amélioration du service. Les Contributions
+    issues de la communauté sont signalées <strong>« à vérifier »</strong> tant qu'elles n'ont pas
+    été confirmées par une source officielle.
+  </p>
+  <p>Il est interdit de transmettre :</p>
+  <ul>
+    <li>des données concernant des tiers sans leur accord ;</li>
+    <li>des données de santé de tiers, des données bancaires ou des documents d'identité ;</li>
+    <li>des contenus illicites, diffamatoires, trompeurs, publicitaires ou contraires à l'ordre public ;</li>
+    <li>des contenus protégés par un droit de tiers (photos d'œuvres, marques de fabricants utilisées abusivement).</li>
+  </ul>
+  <p>
+    L'Éditeur peut retirer toute Contribution contraire aux présentes CGU, sans préavis et sans
+    engager sa responsabilité.
+  </p>
+
+  <h2 id="pi">6. Propriété intellectuelle et licence d'usage</h2>
+  <p>
+    L'Éditeur concède à l'Utilisateur une licence <strong>personnelle, gratuite, non exclusive, non
+    cessible et non transférable</strong> d'utilisation du Site et de l'Application, limitée à un
+    usage privé et non commercial, pour le monde entier et pour la durée d'utilisation du service.
+  </p>
+  <p>
+    Sont interdits, sauf autorisation écrite préalable de l'Éditeur : la reproduction, la
+    modification, l'ingénierie inverse (hors exceptions légales impératives, notamment
+    l'interopérabilité), la décompilation, la redistribution, la location, la revente,
+    l'extraction massive de contenus, l'aspiration automatisée (<em>scraping</em>) et la
+    suppression des mentions de propriété.
+  </p>
+  <p>
+    Les marques et logos de tiers (fabricants, magasins, sources officielles) restent la propriété de
+    leurs titulaires et sont utilisés uniquement à des fins d'identification de l'information.
+  </p>
+
+  <h2 id="sante">7. Santé, sécurité alimentaire et rappels produits</h2>
+  <div class="mf-danger">
+    <p>
+      <strong>MagikFridge n'est pas un dispositif médical.</strong> L'Application ne pose aucun
+      diagnostic, ne délivre aucun traitement, aucune prescription, aucun conseil médical, diététique
+      ou thérapeutique personnalisé. Aucune information délivrée par l'Application ni par son
+      assistant (« Mina ») ne constitue un avis professionnel médical, pharmaceutique ou
+      nutritionnel.
+    </p>
+  </div>
+  <h3>7.1 En cas d'urgence</h3>
+  <p>
+    En cas de doute sur votre état de santé, d'allergie, d'intoxication ou d'urgence, contactez
+    immédiatement un professionnel de santé ou les services d'urgence (<strong>15, 112</strong>).
+    N'utilisez jamais l'Application comme substitut d'un avis médical.
+  </p>
+  <h3>7.2 Sécurité des aliments : la règle qui prime est celle du produit réel</h3>
+  <ul>
+    <li>
+      Les dates, alertes et analyses affichées sont <strong>indicatives</strong>. Seules les
+      informations portées sur l'emballage, l'étiquette et les instructions du fabricant, ainsi que
+      les consignes officielles des autorités, font foi.
+    </li>
+    <li>
+      En cas de rappel de produit annoncé par les autorités (RappelConso), vous devez vérifier
+      <strong>par vous-même</strong> l'information officielle sur
+      <a href="https://rappel.conso.gouv.fr" rel="noopener" target="_blank">rappel.conso.gouv.fr</a>
+      et suivre les consignes officielles (rapport en magasin, remboursement, destruction).
+    </li>
+    <li>
+      L'absence d'alerte affichée ne signifie pas qu'un produit est sûr : les bases de données
+      publiques peuvent être incomplètes ou en retard de mise à jour.
+    </li>
+    <li>
+      <strong>En cas de doute sur un produit : ne le consommez pas.</strong> Un aliment douteux, une
+      conserve bombée, un emballage percé, une odeur ou une texture anormale doivent conduire à
+      écarter le produit.
+    </li>
+  </ul>
+  <h3>7.3 Allergies, intolérances et personnes vulnérables</h3>
+  <p>
+    La détection d'allergènes et d'ingrédients dépend de sources tierces : elle peut être incomplète,
+    erronée ou obsolète. Les personnes allergiques, les femmes enceintes, les jeunes enfants, les
+    personnes immunodéprimées ou souffrant d'une pathologie doivent
+    <strong>toujours lire l'étiquette du produit réel</strong> avant consommation et demander l'avis
+    d'un professionnel de santé. L'Éditeur ne peut être tenu responsable d'une réaction allergique ou
+    d'un trouble résultant de la consommation d'un aliment, quelle qu'en soit la cause.
+  </p>
+
+  <h2 id="exactitude">8. Exactitude des informations</h2>
+  <p>
+    Les informations affichées (fiches produits, additifs, valeurs nutritionnelles, recettes, prix,
+    alertes, traductions, résultats de lecture optique) proviennent de <strong>sources ouvertes
+    tierces</strong> ou de Contributions d'utilisateurs. Elles sont fournies
+    <strong>« en l'état », sans garantie</strong> d'exactitude, d'exhaustivité, d'actualité ou
+    d'adéquation à un usage particulier.
+  </p>
+  <p>
+    L'Éditeur ne garantit notamment pas : qu'un produit soit exempt d'un allergène non détecté, qu'une
+    alerte de rappel soit présente ou à jour, qu'une recette convienne à un régime particulier, ni
+    qu'une information nutritionnelle soit complète. Les décisions prises sur la base de ces
+    informations relèvent de la seule responsabilité de l'Utilisateur, qui doit toujours vérifier
+    l'information sur le produit réel.
+  </p>
+
+  <h2 id="tiers">9. Services tiers et fonctions optionnelles</h2>
+  <p>
+    Certaines fonctions de l'Application interrogent des services tiers, activés uniquement lorsque
+    vous les utilisez. Ces services ont leurs propres conditions et politiques de confidentialité :
+  </p>
+  <table>
+    <thead><tr><th>Fonction</th><th>Service tiers</th><th>Donnée transmise</th></tr></thead>
+    <tbody>
+      <tr><th>Fiche produit par code-barres</th><td>Open Food Facts · DataKick</td><td>le code-barres scanné</td></tr>
+      <tr><th>Alertes de rappel</th><td>RappelConso (data.economie.gouv.fr)</td><td>aucune donnée personnelle</td></tr>
+      <tr><th>Lecture d'étiquette (OCR)</th><td>OCR.space</td><td>la <strong>photo</strong> de l'étiquette envoyée au service</td></tr>
+      <tr><th>Traduction de noms de produits</th><td>MyMemory (Translated)</td><td>le texte à traduire</td></tr>
+      <tr><th>Commerces à proximité</th><td>OpenStreetMap (Nominatim, Overpass)</td><td>une zone géographique approximative</td></tr>
+      <tr><th>Assistant « Mina » (réponses en ligne)</th><td>Cloudflare Workers (assistant.magikfridge.workers.dev)</td><td>la question posée et le contexte nécessaire</td></tr>
+      <tr><th>Recherche de recettes (mode en ligne)</th><td>DuckDuckGo (API)</td><td>les termes de recherche</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Il est recommandé de <strong>ne pas photographier de documents personnels</strong> avec la
+    fonction OCR (courrier, ordonnance, carte d'identité) : seules des étiquettes de produits
+    alimentaires doivent être scannées. Vous pouvez refuser ces fonctions et utiliser l'Application en
+    saisie manuelle.
+  </p>
+
+  <h2 id="responsabilite">10. Responsabilité</h2>
+  <p>
+    L'Éditeur apporte le soin raisonnable attendu d'un éditeur de service numérique gratuit et, à ce
+    titre, met en œuvre les moyens nécessaires au bon fonctionnement du Site et de l'Application.
+    Il s'agit d'une <strong>obligation de moyens</strong>, et non d'une obligation de résultat.
+  </p>
+  <p>
+    Dans les limites permises par la loi, l'Éditeur n'est pas responsable : des dommages indirects
+    (perte d'exploitation, perte de chance, manque à gagner, atteinte à l'image) ; de la perte,
+    l'altération ou l'indisponibilité des Données locales consécutive à une désinstallation, une
+    réinitialisation, une panne, une casse ou un vol de l'appareil ; des conséquences d'une erreur ou
+    d'une omission d'un service tiers ou d'un utilisateur ; d'une interruption du service pour
+    maintenance, mise à jour ou cause extérieure (panne d'hébergeur, de réseau, force majeure) ; de
+    l'usage de l'Application contraire aux présentes CGU ou à la réglementation.
+  </p>
+  <p>
+    <strong>Clause impérative :</strong> rien dans les présentes CGU n'exclut ni ne limite la
+    responsabilité de l'Éditeur en cas de dommage corporel, de faute lourde ou intentionnelle, de
+    manquement à une obligation légale impérative, ni les garanties légales de conformité et des vices
+    cachés lorsque le code de la consommation s'applique (articles L. 217-3 et suivants et L. 217-15
+    du code de la consommation). En cas d'usage professionnel de l'Application, ces garanties légales
+    sont écartées dans les limites permises par la loi.
+  </p>
+
+  <h2 id="sauvegarde">11. Sauvegarde de vos données</h2>
+  <p>
+    Vos données étant enregistrées localement dans votre appareil, <strong>il vous appartient d'en
+    faire des sauvegardes régulières</strong>. L'Application propose une fonction d'export et
+    d'import d'un fichier de sauvegarde : conservez ce fichier dans un espace sûr. L'Éditeur ne
+    disposant d'aucune copie de vos données, il ne peut pas les restaurer à votre place.
+  </p>
+
+  <h2 id="resiliation">12. Suspension et fin d'utilisation</h2>
+  <p>
+    Vous pouvez cesser d'utiliser le service à tout moment : désinstallez l'Application et, si vous le
+    souhaitez, demandez la suppression de votre adresse e-mail de la liste d'attente en écrivant à
+    <a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a> ou en utilisant le lien de désinscription. La
+    suppression est effectuée dans un délai maximal d'un mois.
+  </p>
+  <p>
+    L'Éditeur peut suspendre ou interrompre tout ou partie du service, notamment en cas de
+    manquement grave aux CGU, d'usage frauduleux, d'atteinte à la sécurité ou en cas d'arrêt définitif
+    du projet — les données locales restant dans votre appareil.
+  </p>
+
+  <h2 id="evolution">13. Évolution des CGU et du service</h2>
+  <p>
+    L'Éditeur peut modifier les présentes CGU pour tenir compte de l'évolution du service, des
+    fonctionnalités ou de la réglementation. La version applicable est celle publiée sur cette page,
+    avec sa date de mise à jour ; les modifications substantielles sont signalées sur le Site (et,
+    pour les membres de la liste d'attente, par courriel). En poursuivant l'utilisation du service
+    après une modification, vous l'acceptez.
+  </p>
+  <p>
+    Si une clause des présentes CGU était déclarée nulle ou inapplicable, les autres clauses
+    conserveraient leur plein effet. Le fait de ne pas se prévaloir d'une clause ne vaut pas
+    renonciation à s'en prévaloir ultérieurement.
+  </p>
+
+  <h2 id="droit">14. Droit applicable et litiges</h2>
+  <p>
+    Les présentes CGU sont régies par le <strong>droit français</strong>. En cas de litige, une
+    solution amiable sera recherchée en priorité par une réclamation écrite adressée à
+    <a href="mailto:contact@magikfridge.com">contact@magikfridge.com</a> (réponse dans un délai maximal d'un mois).
+  </p>
+  <p>
+    À défaut d'accord amiable, le litige peut être porté devant les <strong>juridictions françaises
+    compétentes</strong> — le consommateur pouvant saisir la juridiction de son domicile. L'Éditeur
+    n'exerçant pas d'activité professionnelle, la procédure obligatoire de médiation de la
+    consommation prévue à l'article L. 612-1 du code de la consommation ne lui est pas applicable.
+  </p>
+  <p class="mf-meta">
+    Version 1.0 — 20 septembre 2026. Les présentes CGU
+    constituent un modèle soigné ; elles ne remplacent pas l'avis d'un avocat pour votre situation
+    particulière.
+  </p>
+
+  </article>
+</main>
+<footer class="mf-footer">
+  <div class="mf-footer-in">
+    <span>© 2026 MagikFridge — <a href="./">Retour à l'accueil</a></span>
+    <span><a href="./mentions-legales.html">Mentions légales</a> · <a href="./cgu.html">CGU</a> · <a href="./confidentialite.html">Confidentialité</a> · <a href="./cookies.html">Cookies</a></span>
+  </div>
+</footer>
+</body>
+</html>

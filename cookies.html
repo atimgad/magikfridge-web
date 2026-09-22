@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cookies &amp; traceurs — MagikFridge</title>
+<meta name="description" content="MagikFridge n'utilise aucun cookie ni traceur publicitaire : détail des traceurs, journaux d'hébergement, stockage local de l'application et gestion dans le navigateur." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="MagikFridge" />
+<link rel="icon" href="./favicon.png" type="image/png" />
+<link rel="canonical" href="https://magikfridge.com/cookies.html" />
+<meta name="theme-color" content="#7B1FA2" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cookies &amp; traceurs — MagikFridge" />
+<meta property="og:description" content="MagikFridge n'utilise aucun cookie ni traceur publicitaire : détail des traceurs, journaux d'hébergement, stockage local de l'application et gestion dans le navigateur." />
+<meta property="og:url" content="https://magikfridge.com/cookies.html" />
+<meta property="og:locale" content="fr_FR" />
+<style>
+:root{
+  --violet:#7B1FA2; --violet-fonce:#5E1580; --vert:#4CAF50; --vert-fonce:#2E7D32;
+  --orange:#F57C00; --fond:#FDFCFA; --carte:#ffffff; --bord:#EAE4F1;
+  --texte:#241432; --texte-doux:#5B5470;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--fond); color:var(--texte); line-height:1.7;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--violet); text-decoration:underline; text-underline-offset:2px}
+a:hover{color:var(--violet-fonce)}
+.mf-top{position:sticky; top:0; z-index:10; backdrop-filter:blur(8px);
+  background:rgba(253,252,250,.92); border-bottom:1px solid var(--bord)}
+.mf-top-in{max-width:900px; margin:0 auto; padding:14px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.mf-brand{font-weight:800; font-size:18px; text-decoration:none; letter-spacing:-.02em}
+.mf-brand span{color:var(--vert-fonce)}
+.mf-nav{display:flex; gap:18px; flex-wrap:wrap; font-size:14px; font-weight:600}
+.mf-nav a{text-decoration:none}
+.mf-wrap{max-width:900px; margin:0 auto; padding:36px 20px 72px}
+.mf-card{background:var(--carte); border:1px solid var(--bord); border-radius:24px;
+  padding:32px; box-shadow:0 1px 2px rgba(36,20,50,.04)}
+h1{font-size:clamp(27px,4vw,38px); line-height:1.2; margin:0 0 6px; letter-spacing:-.02em}
+h2{font-size:20px; margin:34px 0 10px; color:var(--violet-fonce); letter-spacing:-.01em}
+h3{font-size:16px; margin:22px 0 8px}
+p,li{font-size:15.5px; color:var(--texte)}
+.mf-meta{font-size:13.5px; color:var(--texte-doux); margin:0 0 26px}
+.mf-eyebrow{display:inline-flex; align-items:center; gap:8px; background:#F1E7F7;
+  color:var(--violet-fonce); border-radius:999px; padding:5px 13px; font-size:11.5px;
+  font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:14px}
+.mf-alerte{background:#FFF6E5; border:1px solid #F4C87A; border-left:5px solid var(--orange);
+  border-radius:14px; padding:15px 18px; margin:0 0 26px; font-size:14.5px}
+.mf-alerte strong{color:#8A4B00}
+.mf-todo{background:#FFF1A7; border:1px dashed #C9A100; border-radius:6px;
+  padding:1px 4px; font-weight:700; font-size:.94em}
+.mf-note{background:#F4FBF5; border:1px solid #C8E6C9; border-left:5px solid var(--vert);
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-note strong{color:var(--vert-fonce)}
+.mf-danger{background:#FFF3F2; border:1px solid #F5C6C2; border-left:5px solid #C62828;
+  border-radius:14px; padding:15px 18px; margin:20px 0; font-size:14.5px}
+.mf-danger strong{color:#B71C1C}
+table{width:100%; border-collapse:collapse; margin:16px 0; font-size:14.5px}
+th,td{border:1px solid var(--bord); padding:10px 12px; text-align:left; vertical-align:top}
+th{background:#F7F3FA; font-weight:700}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+code{background:#F3EFF7; border-radius:6px; padding:1px 6px; font-size:13.5px}
+.mf-footer{border-top:1px solid var(--bord); background:#F7F8F5; margin-top:40px}
+.mf-footer-in{max-width:900px; margin:0 auto; padding:26px 20px; font-size:13px;
+  color:var(--texte-doux); display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:space-between}
+.mf-footer a{text-decoration:none}
+.mf-toc{background:#FAF7FD; border:1px solid var(--bord); border-radius:16px;
+  padding:14px 20px; margin:0 0 8px}
+.mf-toc ul{margin:6px 0 0}
+.mf-fort{font-weight:700}
+@media print{
+  .mf-top,.mf-footer{display:none}
+  body{background:#fff}
+  .mf-card{border:none; box-shadow:none; padding:0}
+  h2{page-break-after:avoid}
+}
+@media (max-width:640px){ .mf-card{padding:22px} .mf-wrap{padding:24px 16px 56px} }
+</style>
+</head>
+<body>
+<header class="mf-top">
+  <div class="mf-top-in">
+    <a class="mf-brand" href="./">Magik<span>Fridge</span></a>
+    <nav class="mf-nav" aria-label="Pages légales">
+      <a href="./mentions-legales.html">Mentions légales</a>
+      <a href="./cgu.html">CGU</a>
+      <a href="./confidentialite.html">Confidentialité</a>
+      <a href="./cookies.html">Cookies</a>
+    </nav>
+  </div>
+</header>
+<main class="mf-wrap">
+  <article class="mf-card">
+    <span class="mf-eyebrow">Informations légales</span>
+    <h1>Cookies &amp; traceurs</h1>
+    <p class="mf-meta">
+      MagikFridge — version 1.0 du document · dernière mise à jour :
+      20 septembre 2026
+    </p>
+    
+    
+  <div class="mf-note">
+    <strong>Réponse courte :</strong> le site MagikFridge ne dépose <strong>aucun cookie</strong>,
+    n'installe <strong>aucun traceur publicitaire</strong> et n'utilise <strong>aucun outil de mesure
+    d'audience</strong>. C'est pourquoi vous ne voyez aucun bandeau de consentement : il n'est pas
+    nécessaire, faute de traceur à consentir.
+  </div>
+
+  <h2 id="cookies-site">1. Cookies utilisés par le Site</h2>
+  <table>
+    <thead><tr><th>Type</th><th>Utilisé ?</th><th>Détail</th></tr></thead>
+    <tbody>
+      <tr><th>Cookies strictement nécessaires</th><td>Aucun</td><td>Le Site est une page statique : aucun cookie de session ou d'authentification n'est déposé.</td></tr>
+      <tr><th>Cookies de mesure d'audience</th><td><strong>Non</strong></td><td>Aucun outil (Google Analytics, Matomo, Plausible, Umami…) n'est installé.</td></tr>
+      <tr><th>Cookies publicitaires / de reciblage</th><td><strong>Non</strong></td><td>Aucun réseau publicitaire ni pixel social (Meta, TikTok, LinkedIn…) n'est présent.</td></tr>
+      <tr><th>Cookies de réseaux sociaux</th><td><strong>Non</strong></td><td>Aucun bouton de partage intégré qui vous tracerait automatiquement.</td></tr>
+    </tbody>
+  </table>
+  <p>
+    Le formulaire de liste d'attente envoie votre adresse e-mail par une requête technique
+    (<code>fetch</code>) vers le prestataire Formspree : cette opération n'implique
+    <strong>aucune navigation</strong> vers un autre site et ne dépose donc aucun cookie tiers sur
+    votre navigateur.
+  </p>
+
+  <h2 id="journaux">2. Journaux de l'hébergeur (sans cookie)</h2>
+  <p>
+    Comme tout hébergement, GitHub, Inc. (service GitHub Pages) enregistre des journaux techniques (dont l'adresse IP) lors
+    des visites, à des fins de sécurité et de bon fonctionnement. Il s'agit d'un traitement
+    nécessaire, sans profilage ni usage publicitaire — voir la
+    <a href="./confidentialite.html">Politique de confidentialité</a>.
+  </p>
+
+  <h2 id="stockage-local">3. Stockage local dans l'application mobile</h2>
+  <p>
+    L'application mobile n'utilise ni cookie ni traceur. Vos données (frigo, dates, profil, réglages)
+    sont enregistrées dans le <strong>stockage local de l'application</strong> sur votre téléphone.
+    Ce stockage :
+  </p>
+  <ul>
+    <li>ne quitte pas votre appareil et n'est pas communiqué à l'Éditeur ;</li>
+    <li>n'est pas utilisé pour vous suivre sur d'autres sites ou applications ;</li>
+    <li>peut être effacé immédiatement en supprimant les données de l'application ou en la désinstallant (pensez à exporter une sauvegarde avant).</li>
+  </ul>
+
+  <h2 id="gestion">4. Comment gérer les cookies dans votre navigateur</h2>
+  <p>
+    Vous pouvez à tout moment bloquer ou supprimer les cookies via les réglages de votre navigateur.
+    Ces réglages peuvent affecter le fonctionnement d'autres sites (connexion, paniers, préférences) :
+  </p>
+  <ul>
+    <li><a href="https://support.google.com/chrome/answer/95647" rel="noopener" target="_blank">Google Chrome</a></li>
+    <li><a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" rel="noopener" target="_blank">Safari</a></li>
+    <li><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies" rel="noopener" target="_blank">Mozilla Firefox</a></li>
+    <li><a href="https://support.microsoft.com/fr-fr/microsoft-edge" rel="noopener" target="_blank">Microsoft Edge</a></li>
+  </ul>
+
+  <h2 id="futur">5. Si nous ajoutons un traceur un jour</h2>
+  <p>
+    Si l'Éditeur décide d'ajouter une mesure d'audience ou toute autre fonction nécessitant un
+    traceur non strictement nécessaire, cette page sera mise à jour <strong>avant</strong> la mise en
+    service, avec :
+  </p>
+  <ul>
+    <li>un <strong>bandeau de consentement conforme</strong> aux lignes directrices de la CNIL : refuser aussi simple qu'accepter, aucune case pré-cochée, consentement avant tout dépôt ;</li>
+    <li>un choix granulaire par finalité, modifiable à tout moment ;</li>
+    <li>la liste détaillée des traceurs (nom, finalité, durée, destinataire).</li>
+  </ul>
+  <p class="mf-meta">
+    Version 1.0 — 20 septembre 2026. Cadre de référence : article
+    82 de la loi Informatique et Libertés et lignes directrices de la CNIL sur les cookies et autres
+    traceurs.
+  </p>
+
+  </article>
+</main>
+<footer class="mf-footer">
+  <div class="mf-footer-in">
+    <span>© 2026 MagikFridge — <a href="./">Retour à l'accueil</a></span>
+    <span><a href="./mentions-legales.html">Mentions légales</a> · <a href="./cgu.html">CGU</a> · <a href="./confidentialite.html">Confidentialité</a> · <a href="./cookies.html">Cookies</a></span>
+  </div>
+</footer>
+</body>
+</html>
