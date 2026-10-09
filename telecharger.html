@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <title>Télécharger MagikFridge (Android) — version de test</title>
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Téléchargez l'application MagikFridge pour Android (fichier .apk) et testez l'assistant anti-gaspi. Gratuit, sans compte."
+    />
+    <meta name="theme-color" content="#7B1FA2" />
+    <style>
+      :root { --violet: #7B1FA2; --violet-fonce: #4A148C; --vert: #2E7D32; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1c1b1f; background: linear-gradient(160deg, #faf5ff 0%, #ffffff 55%);
+        display: flex; flex-direction: column; align-items: center;
+      }
+      header { width: 100%; max-width: 640px; padding: 22px 20px 0; display: flex; align-items: center; gap: 10px; }
+      header img { width: 40px; height: 40px; border-radius: 10px; }
+      header a { font-weight: 700; color: var(--violet); text-decoration: none; font-size: 1.15rem; }
+      main { width: 100%; max-width: 640px; padding: 10px 20px 48px; }
+      h1 { font-size: 1.7rem; line-height: 1.2; margin: 18px 0 8px; }
+      .accroche { font-size: 1.05rem; color: #4a4458; margin: 0 0 26px; }
+      .bouton {
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+        width: 100%; padding: 18px 20px; border-radius: 16px; text-decoration: none;
+        background: linear-gradient(135deg, var(--violet), var(--violet-fonce));
+        color: #fff; font-size: 1.15rem; font-weight: 700;
+        box-shadow: 0 10px 24px rgba(123, 31, 162, 0.28);
+      }
+      .bouton:active { transform: translateY(1px); }
+      .meta { text-align: center; font-size: .82rem; color: #6b6880; margin: 10px 0 30px; }
+      .etapes { list-style: none; padding: 0; margin: 0 0 26px; counter-reset: e; }
+      .etapes li { position: relative; padding: 0 0 18px 46px; margin-bottom: 4px; }
+      .etapes li::before {
+        counter-increment: e; content: counter(e); position: absolute; left: 0; top: -2px;
+        width: 32px; height: 32px; border-radius: 50%; background: #f3e5f5; color: var(--violet);
+        font-weight: 700; display: flex; align-items: center; justify-content: center;
+      }
+      .etapes strong { display: block; margin-bottom: 2px; }
+      .etapes span { color: #4a4458; font-size: .95rem; }
+      .note { border-left: 4px solid var(--violet); background: #faf5ff; border-radius: 8px; padding: 14px 16px; font-size: .93rem; color: #3d3548; }
+      .note b { color: var(--violet); }
+      footer { width: 100%; max-width: 640px; padding: 0 20px 40px; font-size: .8rem; color: #8a879b; text-align: center; }
+      footer a { color: var(--violet); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./favicon.png" alt="MagikFridge" />
+      <a href="/">MagikFridge</a>
+    </header>
+    <main>
+      <h1>Testez MagikFridge sur Android</h1>
+      <p class="accroche">
+        Merci de nous aider à tester l'application ! Installez-la en un clic, sans compte,
+        sans magasin d'applications.
+      </p>
+
+      <a class="bouton" href="https://expo.dev/artifacts/eas/CMHqTCk12nEZW04uyP3NjwR2uQFz-ufOCjY3qJoBQRg.apk">
+        ⬇️ Télécharger l'application
+      </a>
+      <p class="meta">Fichier .apk — Android 8 ou plus récent</p>
+
+      <ol class="etapes">
+        <li><strong>Appuyez sur « Télécharger l'application »</strong><span>Le fichier .apk se télécharge sur votre téléphone.</span></li>
+        <li><strong>Ouvrez le fichier téléchargé</strong><span>Android peut afficher un avertissement : autorisez l'installation depuis cette source (c'est normal pour une version de test).</span></li>
+        <li><strong>Lancez MagikFridge</strong><span>Scannez un produit, suivez les dates de péremption et laissez-vous inspirer par vos recettes.</span></li>
+      </ol>
+
+      <p class="note">
+        <b>Vous avez un iPhone ?</b> Une version iOS n'est pas encore disponible. Écrivez-nous
+        et nous vous préviendrons dès qu'elle sera prête.
+      </p>
+    </main>
+    <footer>
+      © MagikFridge — <a href="/">magikfridge.com</a>
+    </footer>
+  </body>
+</html>
